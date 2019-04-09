@@ -2,14 +2,14 @@ version: '3'
 services:
   tracker:
     container_name: tracker
-    image: ygqygq2/fastdfs-nginx
+    image: songyang/fastdfs-nginx
     command: tracker
     network_mode: host
     volumes:   
       - /var/fdfs/tracker:/var/fdfs    
   storage0:
     container_name: storage0
-    image: ygqygq2/fastdfs-nginx
+    image: songyangfastdfs-nginx
     command: storage
     network_mode: host  
     environment:
